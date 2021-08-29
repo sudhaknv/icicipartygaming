@@ -1,0 +1,65 @@
+Git and GIt Hub is Source code repository:
+ 
+Install git in windows 10(google it)-->git-scm.com (AN official webiste and download) and install .exe (Continue with Yes till successfull extension)
+To check git is successfully installed/not ..Right click and then u can see GIT GUI and GIT BASH options and also GIT GUI in search option...
+
+
+
+Login to https://github.com/
+User Name: sudhaknv@gmail.com
+pwd-->Sudha@1217
+
+create new repository in abouve url (public and private)
+In private for storing our data they will 4$ per each repository(in Interview we can say i am working on multiple projects and we have apprx 120 repositories..No need to expose our company repositories names)
+COde in private can be viewed only who have access and public all over world can be viewed...
+
+create directory in lappy and switch to dir in cmd prmpt
+
+git init (to make that dir as gitwork space)
+git clone https://github.com/rayudu123/sudha.git (clone working copy of git from central repository)
+
+create new branch ---> git branch devops
+
+switch to branch ---> git checkout devops
+
+git branch -->to check on which branch we r
+
+add all ur files in this branch
+
+git status --->these files which are in red are in ur local copy
+
+git add filename or * -->Now these files are in staging
+
+git commit -m "my first devops commit" -->this is prod copy
+
+git push origin devops --->it will send all our changes to github where all can access ...
+
+**************************************************************************************************************
+
+git: 
+
+git config 	--global user.name sudhaknv
+
+
+Pull review0--->COde review
+Code is fine we will approve
+If code is not fine will select rework or comment
+
+
+
+
+git --version
+git init --->to make our directory as git directory
+C:\Users\krish>git config --global user.name sudhaknv
+
+
+C:\Users\krish>git clone https://github.com/rayudu123/my-test.git
+
+create file
+
+gitstatus
+
+git add sudhaindex.txt
+
+git commit -a 
+

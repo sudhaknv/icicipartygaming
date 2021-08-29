@@ -1,0 +1,169 @@
+elastic cloud compute (ec2)---->depend on 2 2major thins controller & compute
+controller (back ground) comput(foreground)
+It works as hypervisor(oracle virtual box ,vagrant ,vm)
+
+
+
+Amazon2018.03.0
+
+virtual private cloud
+
+Never selecte terminate in shutdown behaviour (Instance will be deleted automatically) it should be in stop
+
+Jenkins will listen on 8080(by default)
+Apache tomcat (8080) apache (80)  https (443)
+
+
+Once instance was created successfully we have to check for status checks  2/2 checks
+
+
+sudo -i (it will switching account from user to root user)
+ yum install httpd -y (yum yellowdog update modulur)
+ 
+ 
+Redhat (we have systemctl status httpd)
+linux (service httpd restart)
+
+open 
+http://52.14.15.155:80 (it throwed exception as we didnt mention 80 port in security instance)
+
+
+
+It will automatically creates firewall settings
+
+[root@ip-172-31-40-49 ~]# service firewalld status
+firewalld: unrecognized service
+
+ 
+passwd root
+
+UBUNUT--->18.218.100.208
+
+create user--->IAM--->add user
+
+aCCOUNT Id 361267078331--->smallidi--->Sudha@118
+MFA-->Multi Factor Authentication(To give high Security to user)--->CLick on username--->SecurityCredentials--->Download Google Authenticatoe & scan code
+
+In organisation they will give device instaed of google authenticator
+
+Without elastic we will use public key
+With elastic Private Key
+
+
+Difffercen btn rwdhat ubuntu
+Ubuntu --->systemctl status apache2
+Ubuntu version-->ubuntu@ip-172-31-19-173:~$ lsb_release -a
+
+cat /etc/os-release
+
+
+When we stop & start instance IP address will change automatically...To keep permanent IP we will make it throgu Elastic IP Address---
+Elastic IP Address (Chargeble)--->We will allocate permanent IP address to our own instance (LINUX,UBUNTU)
+
+                                                   Target Group
+casinoclub
+
+LoadBalancer -->partypoker
+
+Create LoadBalancer--->Create HTTP/HTTPS --->Name--->bingo1(no . or specail character allowed) --->Select two availablie zones--->
+Step 2--->NIll
+step 3--->Create a new Security Groups 
+step 4--->COnfgure ROuting--->Target Group Name--->bing1--->Health CHecks--->/index.html(it should be placed in /var/www/index.html(root page)
+step 5---> Register Targets--->Add to registered
+step 6---->review and close
+step 7--->Once LB and target group is created click on lb and RUles(Down side)--->View / Edit Rules 
+step 8--->Rules--->+--->Insert RULE --->Add condition--->Path--->*bingo1--->THEN Forward to bingo1-->save
+
+
+
+
+
+Ip/n.w
+
+Class A 10 171 (AWS)
+Class B 172 191 (DOcker)
+Class C 192 251 (Normal Cases)
+
+Creation of Image---> Incase of instance creation it wi
+
+
+
+
+
+Install  MySql workBench ( to install workbench visual c++
+
+secure crt (C:\Users\sudha\AppData\Roaming\VanDyke\Config)
+
+
+We should select easy create (standard Create) in real time environment
+Select freetier in dbsize...
+DB Size should be below 40gb
+RDS pwd username admin (Sudh1218)
+port 3306
+ TO delete database enter   delete me in prompt 
+Mysql work benck connection name sudhakarmysql
+
+
+
+
+
+s3--->Bucket
+
+TO store data or any files(photos images videos etc) we will use s3...Which all can be stored in HDD
+
+Create Bucket---->
+ENter bucketname--->sudhakar1218 (Its like gmail will check for universal ids and if its matching with same name it wont allow u to create)
+and click next
+Instead of KEy(name) value(sudhakar1220)
+Block public access (Leave it for now) we can change post creation of bucket-->
+Next and create buccket.
+
+Click on Bucket Name--->Permissions--->edit and allow public access--->make public
+Overview--->UPload file-->copypath and open URL---> It should open in browser once its opened to public...
+Bucketname sudhakar1218
+
+uncheck (block all public access( To enable to public visibilty )
+
+
+IF we dont give public access it will show access denied in Browse
+
+
+
+DB Practise-----> Create a excelsheet with csv format with 5 columns (sno dname sbjct mrks etc)
+
+create bucket--->bkt name sudhakarglue
+Create folser (read & write)-->upload csv file to read folder
+Open AWS GLUE and goto Crawler
+
+Add crawler--->sudhakarcrawler
+Datastores---->Choose data store--->Includepath(sudhakarglue)--->Next Next-->Choose IAM ROle (AWS GLUE Service Role) sudhakarIAM
+Frequence(RunOnDemand)--->Database(Choouses3bucketname)--->Review all steps and Run Crawler
+JObs--->Add job(giveanyjobname)--->next next save and exit script...--->RunjOB(It will convert whole db table to script)
+
+
+
+Lambda: cahrgeble(FOr testing purpose and will create cloud watch & cloud trail)
+
+Lambda--->Creata FUcntion--->Use a blue Print(We will use blue print in real time env)--->(Blue Prints info & select any one)
+ 
+Function name-> SudhakarLambda--->create a new role--->Create function
+Select a testevent(Configure test event) and run test ( It will display all code erros in output and will share them to Dev team)Its 100% accurancy and less time.
+
+Author from scratch ( It will have default code Hello WOrld) and will test code accuracy
+
+Browse serverless---->
+
+
+
+Trigger COnfiguration(Equal to CRON JOB)---> Api Gateway--->Create API--->Security open--->
+
+
+Kinesis Data---->
+Create Data Stream--->sudhakar
+Data Stream Capacity--->Shared estimator(we can allocate our size and etc...)--->Create Data Stream
+
+
+Delivery Stream--->New Dlvy stream(Source -->kineses data stream 
+Key(name) value (sudhakar)
+
+

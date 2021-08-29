@@ -1,0 +1,6 @@
+
+
+
+how many words begin with the letter a from the CentOS main user dictionary.
+egrep '^a.*$' /usr/share/dict/words | wc -l 
+
